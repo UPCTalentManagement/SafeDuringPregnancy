@@ -1,0 +1,61 @@
+<!-- category.html -->
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Category Results</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <header>
+        <div class="header-content">
+            <img src="logo.png" alt="SafeMeds Logo" class="logo">
+            <h1>SafeMeds Pregnancy</h1>
+        </div>
+    </header>
+
+    <main class="container">
+        <div id="categoryResults" class="results-container"></div>
+    </main>
+
+    <script src="drugs.json"></script>
+    <script>
+        document.addEventListener('DOMContentLoaded', () => {
+            const urlParams = new URLSearchParams(window.location.search);
+            const category = urlParams.get('category');
+            
+            fetch('drugs.json')
+                .then(response => response.json())
+                .then(drugs => {
+                    const results = drugs.filter(drug => 
+                        drug.category === category && drug.otc
+                    );
+                    displayResults(results, category);
+                });
+        });
+
+        function displayResults(results, category) {
+            const container = document.getElementById('categoryResults');
+            container.innerHTML = `<h2>Safe OTC Options in ${category}</h2>`;
+            
+            if (results.length === 0) {
+                container.innerHTML += `<p>No OTC options found in this category.</p>`;
+                return;
+            }
+
+            results.forEach(drug => {
+                const card = document.createElement('div');
+                card.className = 'drug-card';
+                card.innerHTML = `
+                    <div class="otc-tag">OTC</div>
+                    <h3>${drug.generic}</h3>
+                    <p><strong>Brands:</strong> ${drug.tradeNames.join(', ')}</p>
+                    <p><strong>Safety:</strong> ${drug.pregnancySafety}</p>
+                `;
+                container.appendChild(card);
+            });
+        }
+    </script>
+</body>
+</html>

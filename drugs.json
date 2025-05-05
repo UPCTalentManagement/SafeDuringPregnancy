@@ -1,0 +1,38 @@
+
+[
+    {
+        "generic": "Paracetamol",
+        "tradeNames": ["Panadol", "Tylenol"],
+        "category": "Analgesics",
+        "pregnancySafety": "Generally safe in all trimesters",
+        "otc": true
+    },
+    {
+        "generic": "Loratadine",
+        "tradeNames": ["LORINEX", "Claritin"],
+        "category": "Respiratory",
+        "pregnancySafety": "Category B - Safe for use",
+        "otc": true
+    },
+    {
+        "generic": "VITAMIN C",
+        "tradeNames": ["Ascorbic Acid", "Citrus Bioflavonoids"],    
+        "category": "Vitamins",
+        "pregnancySafety": "Generally safe in all trimesters",
+        "otc": true
+    },
+    {
+        "generic": "SALINE NASAL SPRAY",
+        "tradeNames": ["Ocean", "Ayr"],
+        "category": "Respiratory",
+        "pregnancySafety": "Category B - Safe for use",
+        "otc": true
+    },
+    {
+        "generic": "Ibuprofen",
+        "tradeNames": ["Advil", "Motrin"],
+        "category": "Analgesics",
+        "pregnancySafety": "Use with caution, especially in the third trimester",
+        "otc": true
+    }
+]
