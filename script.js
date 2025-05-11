@@ -67,7 +67,7 @@ function displayResults(results) {
         const card = document.createElement('div');
         card.className = 'drug-card';
         card.innerHTML = `
-            ${drug.otc ? '<div class="otc-tag">OTC</div>' : ''}
+            ${drug.otc ? '<div class="otc-tag">OTC</div>' : '<div class="rx-tag">Rx Only</div>'}
             <h3>${drug.generic}</h3>
             <p><strong>Brands:</strong> ${drug.tradeNames.join(', ')}</p>
             <p><strong>Pregnancy Safety:</strong> ${drug.pregnancySafety}</p>
