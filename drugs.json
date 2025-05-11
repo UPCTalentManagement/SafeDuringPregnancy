@@ -1,38 +1,61 @@
 
 [
     {
-        "generic": "Paracetamol",
-        "tradeNames": ["Panadol", "Tylenol"],
-        "category": "Analgesics",
-        "pregnancySafety": "Generally safe in all trimesters",
-        "otc": true
-    },
-    {
-        "generic": "Loratadine",
-        "tradeNames": ["LORINEX", "Claritin"],
-        "category": "Respiratory",
-        "pregnancySafety": "Category B - Safe for use",
-        "otc": true
-    },
-    {
         "generic": "VITAMIN C",
         "tradeNames": ["Ascorbic Acid", "Citrus Bioflavonoids"],    
         "category": "Vitamins",
         "pregnancySafety": "Generally safe in all trimesters",
+        "Lactation":"Safe",
         "otc": true
     },
     {
         "generic": "SALINE NASAL SPRAY",
-        "tradeNames": ["Ocean", "Ayr"],
+        "tradeNames": ["Ocean", "SINOMARIN"],
         "category": "Respiratory",
-        "pregnancySafety": "Category B - Safe for use",
+        "pregnancySafety": "Safe for use",
+        "Lactation":"Safe",
         "otc": true
     },
     {
-        "generic": "Ibuprofen",
-        "tradeNames": ["Advil", "Motrin"],
+        "generic": "Paracetamol",
+        "tradeNames": ["FEVADOL"," EMIDOL", "ADOL","TYLENOL","PANADREX"," PANDA"," OMOL"," DEFADOL"],
         "category": "Analgesics",
-        "pregnancySafety": "Use with caution, especially in the third trimester",
+        "pregnancySafety": "Generally Safe",
+        "Lactation":" Compatible ",
+        "otc": true
+    },{
+        "generic": "Ibuprofen",
+        "tradeNames":["PROF"," SAPOFEN"," BRUFEN"],
+        "category": "Analgesics",
+        "pregnancySafety": "Risk in 1st and 3rd Trimester ",
+        "Lactation": "Compatible",
+        "otc": true
+    },
+{
+        "generic": " Pseudoephedrine ",
+        "tradeNames": ["PANADOL SINUS"," FLUTAB SINUS"],
+        "category": "Respiratory",
+        "pregnancySafety": "Not Recommended",
+        "Lactation":"May be used",
+        "otc": true
+    },
+
+
+{
+        "generic": " Dextromethorphan ",
+        "tradeNames": ["KAFOSED ", " DEXTROKUF "," RIAPHAN"],
+        "category": "Respiratory",
+        "pregnancySafety": "Safe",
+        "Lactation":"Safe",
+        "otc": false
+    },
+    {
+        "generic": "Loratadine",
+        "tradeNames": ["LORINEX", "CLARITIN"," CLARA"],
+        "category": "Respiratory",
+        "pregnancySafety": "May be used",
+        "Lactation": "Probably compatible",
         "otc": true
     }
+
 ]

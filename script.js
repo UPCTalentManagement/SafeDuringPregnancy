@@ -70,7 +70,8 @@ function displayResults(results) {
             ${drug.otc ? '<div class="otc-tag">OTC</div>' : ''}
             <h3>${drug.generic}</h3>
             <p><strong>Brands:</strong> ${drug.tradeNames.join(', ')}</p>
-            <p><strong>Safety:</strong> ${drug.pregnancySafety}</p>
+            <p><strong>Pregnancy Safety:</strong> ${drug.pregnancySafety}</p>
+            <p><strong>Lactation Safety:</strong> ${drug.Lactation}</p>
         `;
         container.appendChild(card);
     });
