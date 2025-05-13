@@ -75,15 +75,15 @@ h1 {
 
 .category-grid {
     display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
-    gap: 1rem;
-    margin-bottom: 2rem;
+    grid-template-columns: repeat(auto-fit, minmax(100px, 1fr));
+    gap: 0.5rem;
+    margin-bottom: 1rem;
 }
 
 .category-card {
     background: white;
     border-radius: 15px;
-    padding: 1.5rem;
+    padding: 0.5rem;
     text-align: center;
     cursor: pointer;
     transition: all 0.3s ease;
