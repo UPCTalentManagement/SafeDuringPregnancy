@@ -3,7 +3,7 @@
     {
         "generic": "VITAMIN C",
         "tradeNames": ["Ascorbic Acid", "Citrus Bioflavonoids"],    
-        "category": "Vitamins",
+        "category": "Natural",
         "pregnancySafety": "Generally safe in all trimesters",
         "Lactation":"Safe",
         "otc": true
@@ -117,7 +117,7 @@
    {
         "generic": "Aspirin",
         "tradeNames": ["DISPRIN 81", " ASPICARD 81"],
-        "category": " Analgesics",
+        "category": "Analgesics",
         "pregnancySafety": " Compatible if Low Dose only (50-100mg) and better avoided in 1st and 2nd trimester if possible",
         "Lactation": "Not Recommended ",
         "otc": false
